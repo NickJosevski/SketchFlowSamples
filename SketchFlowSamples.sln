@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SketchFlowSamples", "SketchFlowSamples\SketchFlowSamples.csproj", "{bec8c3d5-390c-46bc-a6e0-0d41ff46bdfe}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SketchFlowSamplesScreens", "SketchFlowSamples\SketchFlowSamplesScreens\SketchFlowSamplesScreens.csproj", "{ba3bee12-1b4a-4083-83d1-b5be85e00f21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEC8C3D5-390C-46BC-A6E0-0D41FF46BDFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC8C3D5-390C-46BC-A6E0-0D41FF46BDFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC8C3D5-390C-46BC-A6E0-0D41FF46BDFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC8C3D5-390C-46BC-A6E0-0D41FF46BDFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA3BEE12-1B4A-4083-83D1-B5BE85E00F21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA3BEE12-1B4A-4083-83D1-B5BE85E00F21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA3BEE12-1B4A-4083-83D1-B5BE85E00F21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA3BEE12-1B4A-4083-83D1-B5BE85E00F21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

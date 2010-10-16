@@ -1,0 +1,22 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity"
+	mc:Ignorable="d"
+	x:Class="SketchFlowSamplesScreens.Screen_1"
+	Width="640" Height="480">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<TextBlock Height="62" Margin="8,8,8,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="SketchFlow Samples" VerticalAlignment="Top" FontSize="48" TextAlignment="Center"/>
+		<TextBlock HorizontalAlignment="Left" Height="25" Margin="8,90,0,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" Text="Navigate to sample pages:" VerticalAlignment="Top" Width="223"/>
+		<Button Content="Typing Animation Effect" Margin="156,119,312,0" VerticalAlignment="Top">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="SketchFlowSamplesScreens.Screen_2"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+	</Grid>
+</UserControl>
