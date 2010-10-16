@@ -9,6 +9,27 @@
 	Width="640" Height="480">
 
 	<Grid x:Name="LayoutRoot" Background="White">
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="_SketchFlowAnimation_SketchFlowAnimation" d:IsSketchFlowAnimation="True">
+				<VisualStateGroup.Transitions>
+					<VisualTransition GeneratedDuration="0:0:0.5" To="SketchFlowAnimationFrame">
+						<VisualTransition.GeneratedEasingFunction>
+							<CubicEase EasingMode="EaseInOut"/>
+						</VisualTransition.GeneratedEasingFunction>
+					</VisualTransition>
+					<VisualTransition From="holdtimes" GeneratedDuration="0:0:1" To="SketchFlowAnimationFrame"/>
+				</VisualStateGroup.Transitions>
+				<VisualState x:Name="holdtimes"/>
+				<VisualState x:Name="SketchFlowAnimationFrame">
+					<Storyboard>
+						<DoubleAnimation Duration="0" To="0.5" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grey_box" d:IsOptimized="True"/>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="_SketchFlowAnimation_base">
+					<Storyboard/>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
 		<Button Content="Return Home" HorizontalAlignment="Right" Margin="0,0,8,8" VerticalAlignment="Bottom" Width="110">
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
@@ -16,5 +37,14 @@
 				</i:EventTrigger>
 			</i:Interaction.Triggers>
 		</Button>
+		<TextBlock x:Name="HEADER_NOT_PART_OF_ANIMATION" Height="62" Margin="8,8,8,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" TextAlignment="Center"><Run Text="Typing "/><Run Text="Animation - "/><Run Text="Demo 1"/></TextBlock>
+		<TextBlock x:Name="typed_text" Height="20" Margin="37,136,46,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Step 1. Create an Existing Text Block (this is it)"/><Run Text=", this text"/><Run Text=" is here to begin with and will be r"/><Run Text="emoved."/></TextBlock>
+		<Rectangle x:Name="grey_box" Height="18" Margin="37,114,46,0" Stroke="Black" VerticalAlignment="Top" Opacity="0">
+			<Rectangle.Fill>
+				<SolidColorBrush Color="Gray" Opacity="0.5"/>
+			</Rectangle.Fill>
+		</Rectangle>
+		<Rectangle x:Name="white_rectangle" Margin="37,184,46,0" Stroke="Black" StrokeThickness="0" Height="16" VerticalAlignment="Top"/>
+		<TextBlock x:Name="simulated_typed_text" Height="20" Margin="37,160,46,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="This is newly typed text, this text box was collapsed (width 0) and was dragged out as animation."/>
 	</Grid>
 </UserControl>

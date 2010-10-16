@@ -1,0 +1,56 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="SketchFlowSamples" EntryPointType="SketchFlowSamples.App" RuntimeVersion="4.0.50401.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="SketchFlowSamples" Source="SketchFlowSamples.dll" />
+    <AssemblyPart x:Name="Microsoft.Expression.Interactions" Source="Microsoft.Expression.Interactions.dll" />
+    <AssemblyPart x:Name="Microsoft.Expression.Prototyping.Interactivity" Source="Microsoft.Expression.Prototyping.Interactivity.dll" />
+    <AssemblyPart x:Name="Microsoft.Expression.Prototyping.Runtime" Source="Microsoft.Expression.Prototyping.Runtime.dll" />
+    <AssemblyPart x:Name="Microsoft.Expression.Prototyping.SketchControls" Source="Microsoft.Expression.Prototyping.SketchControls.dll" />
+    <AssemblyPart x:Name="SketchFlowSamples.Screens" Source="SketchFlowSamples.Screens.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
+    <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Navigation" Source="System.Windows.Controls.Navigation.dll" />
+    <AssemblyPart x:Name="System.Xml.Serialization" Source="System.Xml.Serialization.dll" />
+    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
+    <AssemblyPart Source="de/System.Windows.Controls.resources.dll" />
+    <AssemblyPart Source="es/System.Windows.Controls.resources.dll" />
+    <AssemblyPart Source="fr/System.Windows.Controls.resources.dll" />
+    <AssemblyPart Source="it/System.Windows.Controls.resources.dll" />
+    <AssemblyPart Source="ja/System.Windows.Controls.resources.dll" />
+    <AssemblyPart Source="ko/System.Windows.Controls.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Windows.Controls.resources.dll" />
+    <AssemblyPart Source="zh-Hant/System.Windows.Controls.resources.dll" />
+    <AssemblyPart Source="de/Microsoft.Expression.Prototyping.Runtime.resources.dll" />
+    <AssemblyPart Source="en/Microsoft.Expression.Prototyping.Runtime.resources.dll" />
+    <AssemblyPart Source="es/Microsoft.Expression.Prototyping.Runtime.resources.dll" />
+    <AssemblyPart Source="fr/Microsoft.Expression.Prototyping.Runtime.resources.dll" />
+    <AssemblyPart Source="it/Microsoft.Expression.Prototyping.Runtime.resources.dll" />
+    <AssemblyPart Source="ja/Microsoft.Expression.Prototyping.Runtime.resources.dll" />
+    <AssemblyPart Source="ko/Microsoft.Expression.Prototyping.Runtime.resources.dll" />
+    <AssemblyPart Source="zh-Hans/Microsoft.Expression.Prototyping.Runtime.resources.dll" />
+    <AssemblyPart Source="zh-Hant/Microsoft.Expression.Prototyping.Runtime.resources.dll" />
+    <AssemblyPart Source="de/System.Windows.Controls.Navigation.resources.dll" />
+    <AssemblyPart Source="es/System.Windows.Controls.Navigation.resources.dll" />
+    <AssemblyPart Source="fr/System.Windows.Controls.Navigation.resources.dll" />
+    <AssemblyPart Source="it/System.Windows.Controls.Navigation.resources.dll" />
+    <AssemblyPart Source="ja/System.Windows.Controls.Navigation.resources.dll" />
+    <AssemblyPart Source="ko/System.Windows.Controls.Navigation.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Windows.Controls.Navigation.resources.dll" />
+    <AssemblyPart Source="zh-Hant/System.Windows.Controls.Navigation.resources.dll" />
+    <AssemblyPart Source="de/System.Xml.Serialization.resources.dll" />
+    <AssemblyPart Source="es/System.Xml.Serialization.resources.dll" />
+    <AssemblyPart Source="fr/System.Xml.Serialization.resources.dll" />
+    <AssemblyPart Source="it/System.Xml.Serialization.resources.dll" />
+    <AssemblyPart Source="ja/System.Xml.Serialization.resources.dll" />
+    <AssemblyPart Source="ko/System.Xml.Serialization.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Xml.Serialization.resources.dll" />
+    <AssemblyPart Source="zh-Hant/System.Xml.Serialization.resources.dll" />
+    <AssemblyPart Source="de/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="es/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="fr/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="it/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="ja/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="ko/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="zh-Hans/System.Xml.Linq.resources.dll" />
+    <AssemblyPart Source="zh-Hant/System.Xml.Linq.resources.dll" />
+  </Deployment.Parts>
+</Deployment>

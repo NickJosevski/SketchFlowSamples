@@ -1,0 +1,8 @@
+D:\Project Schuffeln\SketchFlowSamples\SketchFlowSamples\SketchFlowSamples\Bin\Debug\SketchFlowSamples.Screens.dll
+D:\Project Schuffeln\SketchFlowSamples\SketchFlowSamples\SketchFlowSamples\Bin\Debug\SketchFlowSamples.Screens.pdb
+D:\Project Schuffeln\SketchFlowSamples\SketchFlowSamples\SketchFlowSamples\SketchFlowSamplesScreens\obj\Debug\ResolveAssemblyReference.cache
+D:\Project Schuffeln\SketchFlowSamples\SketchFlowSamples\SketchFlowSamples\SketchFlowSamplesScreens\obj\Debug\Screen_1.g.cs
+D:\Project Schuffeln\SketchFlowSamples\SketchFlowSamples\SketchFlowSamples\SketchFlowSamplesScreens\obj\Debug\Screen_2.g.cs
+D:\Project Schuffeln\SketchFlowSamples\SketchFlowSamples\SketchFlowSamples\SketchFlowSamplesScreens\obj\Debug\SketchFlowSamples.Screens.g.resources
+D:\Project Schuffeln\SketchFlowSamples\SketchFlowSamples\SketchFlowSamples\SketchFlowSamplesScreens\obj\Debug\SketchFlowSamples.Screens.dll
+D:\Project Schuffeln\SketchFlowSamples\SketchFlowSamples\SketchFlowSamples\SketchFlowSamplesScreens\obj\Debug\SketchFlowSamples.Screens.pdb
