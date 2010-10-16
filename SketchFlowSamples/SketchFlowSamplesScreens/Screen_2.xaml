@@ -12,21 +12,23 @@
 		<VisualStateManager.VisualStateGroups>
 			<VisualStateGroup x:Name="_SketchFlowAnimation_SketchFlowAnimation" d:IsSketchFlowAnimation="True">
 				<VisualStateGroup.Transitions>
-					<VisualTransition GeneratedDuration="0:0:0.5" To="SketchFlowAnimationFrame">
-						<VisualTransition.GeneratedEasingFunction>
-							<CubicEase EasingMode="EaseInOut"/>
-						</VisualTransition.GeneratedEasingFunction>
-					</VisualTransition>
 					<VisualTransition From="holdtimes" GeneratedDuration="0:0:1" To="SketchFlowAnimationFrame"/>
+					<VisualTransition GeneratedDuration="0:0:0.5" To="SketchFlowAnimationFrame"/>
 				</VisualStateGroup.Transitions>
 				<VisualState x:Name="holdtimes"/>
-				<VisualState x:Name="SketchFlowAnimationFrame">
-					<Storyboard>
-						<DoubleAnimation Duration="0" To="0.5" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grey_box" d:IsOptimized="True"/>
-					</Storyboard>
-				</VisualState>
 				<VisualState x:Name="_SketchFlowAnimation_base">
 					<Storyboard/>
+				</VisualState>
+				<VisualState x:Name="SketchFlowAnimationFrame">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="existing_typed_text">
+							<DiscreteObjectKeyFrame KeyTime="0">
+								<DiscreteObjectKeyFrame.Value>
+									<Visibility>Visible</Visibility>
+								</DiscreteObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
 				</VisualState>
 			</VisualStateGroup>
 		</VisualStateManager.VisualStateGroups>
@@ -38,13 +40,21 @@
 			</i:Interaction.Triggers>
 		</Button>
 		<TextBlock x:Name="HEADER_NOT_PART_OF_ANIMATION" Height="62" Margin="8,8,8,0" Style="{StaticResource BasicTextBlock-Sketch}" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" TextAlignment="Center"><Run Text="Typing "/><Run Text="Animation - "/><Run Text="Demo 1"/></TextBlock>
-		<TextBlock x:Name="typed_text" Height="20" Margin="37,136,46,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Step 1. Create an Existing Text Block (this is it)"/><Run Text=", this text"/><Run Text=" is here to begin with and will be r"/><Run Text="emoved."/></TextBlock>
-		<Rectangle x:Name="grey_box" Height="18" Margin="37,114,46,0" Stroke="Black" VerticalAlignment="Top" Opacity="0">
+		<TextBlock x:Name="simulated_typed_text" Height="20" Margin="37,135,52,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="This is newly typed text, this text box was collapsed (width 0) and was dragged out as animation." RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+			<TextBlock.RenderTransform>
+				<CompositeTransform/>
+			</TextBlock.RenderTransform>
+		</TextBlock>
+		<Rectangle x:Name="highlight_rectangle" Margin="31,135,52,0" Stroke="#FF787878" Height="20" VerticalAlignment="Top" OpacityMask="Black" Visibility="Collapsed">
 			<Rectangle.Fill>
-				<SolidColorBrush Color="Gray" Opacity="0.5"/>
+				<SolidColorBrush Color="#FF747474" Opacity="0.5"/>
 			</Rectangle.Fill>
 		</Rectangle>
-		<Rectangle x:Name="white_rectangle" Margin="37,184,46,0" Stroke="Black" StrokeThickness="0" Height="16" VerticalAlignment="Top"/>
-		<TextBlock x:Name="simulated_typed_text" Height="20" Margin="37,160,46,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="This is newly typed text, this text box was collapsed (width 0) and was dragged out as animation."/>
+		<Rectangle x:Name="wipe_action_rectangle" Margin="31,135,52,0" Stroke="White" OpacityMask="Black" Height="20" VerticalAlignment="Top">
+			<Rectangle.Fill>
+				<SolidColorBrush Color="White" Opacity="0.5"/>
+			</Rectangle.Fill>
+		</Rectangle>
+		<TextBlock x:Name="existing_typed_text" Height="20" Margin="37,135,46,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Step 1. Create an Existing Text Block (this is it)"/><Run Text=", this text"/><Run Text=" is here to begin with and will be r"/><Run Text="emoved."/></TextBlock>
 	</Grid>
 </UserControl>
